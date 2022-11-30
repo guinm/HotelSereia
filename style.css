@@ -134,6 +134,19 @@ h3 {
 	cursor: default;
 }
 
+#main h1:first-of-type {
+	position: relative;
+}
+
+#main h1:first-of-type::before {
+	content: '';
+	width: 100%;
+	left: 0;
+	border-bottom: solid white 2px;
+	position: absolute;
+	bottom: 5px;
+}
+
 #main .content {
 	position: relative;
 	font-family: Istok Web;
