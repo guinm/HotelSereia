@@ -141,6 +141,7 @@ h3 {
 	text-align: justify;
 	padding: 1.5em;
 	display: flex;
+	line-height: 1.42em;
 }
 
 .content::before {
