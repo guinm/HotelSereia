@@ -87,7 +87,7 @@ a:hover {
 
 #main {
 	margin: 0 auto;
-	width: min(80vw, 90vw);
+	width: min(85vw, 95vw);
 	min-height: 50vh;
 	margin-top: 15vh;	
 }
@@ -108,11 +108,21 @@ h3 {
 }
 
 #main #content {
+	position: relative;
 	font-family: Istok Web;
 	font-size: 1.25em;
 	text-align: justify;
 	padding: 1.5em;
 	display: flex;
+}
+
+#content::before {
+	content: "";
+	position: absolute;
+	bottom: 5%;
+	left: 5%;
+	width: 90%;
+	border-bottom: 2px solid var(--destaque);
 }
 
 #main .title {
@@ -123,4 +133,5 @@ h3 {
 	padding: 0px;
 	line-height: 2em;
 	color: white;
+	letter-spacing: 0.08em;
 }
