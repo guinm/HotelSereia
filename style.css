@@ -1,0 +1,126 @@
+:root {
+	--destaque: #00a990;
+	--azul-base: #1565af;
+}
+
+@font-face { font-family: Fontastique; src: url('assets/fonts/fontastique.ttf'); }
+
+* {
+	margin: 0px;
+}
+
+body {
+	background: var(--azul-base);
+	-ms-overflow-style: none;  IE and Edge 
+	scrollbar-width: none;
+	overflow-x: hidden;
+}
+
+/*
+::-webkit-scrollbar {
+  width: 10px;
+  
+}
+
+
+::-webkit-scrollbar-track {
+  background: #4298e8; 
+}
+ 
+
+::-webkit-scrollbar-thumb {
+  background:  #104b81; 
+  border-radius: 5px;
+ 
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1532af; 
+}
+*/
+
+#menu {
+	position: fixed;
+	height: 5em;
+	width: 100vw;
+	top: 0;
+	left: 0;
+	background: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	box-shadow: 0px 5px 5px #0005;
+}
+
+#menu img {
+	height: 5em;
+	display: flex;
+	margin-left: 5em;
+}
+
+#menu #opcs {
+	margin-right: 30px;
+}
+
+#opcs a{
+	font-family: Fontastique;
+	position: relative;
+	z-index: 5;
+	color: var(--destaque);
+	margin: 10px;
+	font-size: 22px;
+	border: solid var(--destaque) 2px;
+	padding: .35em;
+	border-radius: .5em;
+	transition: all 0.35s;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+#opcs a:hover {
+	background-color: var(--destaque);
+	color: white;
+}
+
+#main {
+	margin: 0 auto;
+	width: min(80vw, 90vw);
+	min-height: 50vh;
+	margin-top: 15vh;	
+}
+
+.card {
+	background-color: white;
+	box-shadow: 0px 0px 10px #0008;
+}
+
+h1,
+h2,
+h3 {
+	padding-top: 0.35em;
+	color: var(--destaque);
+	text-align: center;
+	font-family: Fontastique;
+	cursor: default;
+}
+
+#main #content {
+	font-family: Istok Web;
+	font-size: 1.25em;
+	text-align: justify;
+	padding: 1.5em;
+	display: flex;
+}
+
+#main .title {
+	background-color: var(--destaque);
+}
+
+.title h1 {
+	padding: 0px;
+	line-height: 2em;
+	color: white;
+}
