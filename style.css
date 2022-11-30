@@ -14,6 +14,14 @@ body {
 	-ms-overflow-style: none;  IE and Edge 
 	scrollbar-width: none;
 	overflow-x: hidden;
+	
+	background: 
+	linear-gradient(135deg, #ccc2 25%, transparent 25%) -40px 0,
+	linear-gradient(225deg, #ccc2 25%, transparent 25%) -40px 0,
+	linear-gradient(315deg, #ccc2 25%, transparent 25%),
+	linear-gradient(45deg, #ccc2 25%, transparent 25%);	
+	background-size: 80px 80px;
+	background-color: var(--azul-base);
 }
 
 /*
@@ -64,16 +72,36 @@ body {
 }
 
 #opcs a{
+	display: inline-block;
 	font-family: Fontastique;
 	position: relative;
 	z-index: 5;
 	color: var(--destaque);
 	margin: 10px;
 	font-size: 22px;
-	border: solid var(--destaque) 2px;
+	border:  2px solid var(--destaque);
+	border-bottom: 5px solid var(--destaque);
 	padding: .35em;
-	border-radius: .5em;
 	transition: all 0.35s;
+	overflow: hidden;
+}
+
+#opcs a::before{
+	content: '';
+	position: absolute;
+	bottom: -120%;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: var(--destaque);
+	transition: 0.5s all;
+	z-index: -3;
+	text-align: center;
+	line-height: inherit;
+}
+
+#opcs a:hover::before {
+	bottom: 0px;
 }
 
 a:hover {
@@ -81,20 +109,19 @@ a:hover {
 }
 
 #opcs a:hover {
-	background-color: var(--destaque);
 	color: white;
 }
 
 #main {
 	margin: 0 auto;
-	width: min(85vw, 95vw);
+	width: min(90vw, 95vw);
 	min-height: 50vh;
 	margin-top: 15vh;	
 }
 
 .card {
 	background-color: white;
-	box-shadow: 0px 0px 10px #0008;
+	box-shadow: 0px 0px 15px #000D;
 }
 
 h1,
@@ -107,7 +134,7 @@ h3 {
 	cursor: default;
 }
 
-#main #content {
+#main .content {
 	position: relative;
 	font-family: Istok Web;
 	font-size: 1.25em;
@@ -116,12 +143,12 @@ h3 {
 	display: flex;
 }
 
-#content::before {
+.content::before {
 	content: "";
 	position: absolute;
 	bottom: 5%;
-	left: 5%;
-	width: 90%;
+	left: 1.5%;
+	width: 97%;
 	border-bottom: 2px solid var(--destaque);
 }
 
@@ -134,4 +161,44 @@ h3 {
 	line-height: 2em;
 	color: white;
 	letter-spacing: 0.08em;
+}
+
+.content.split {
+	display: flex;
+	flex-direction: row;
+}
+
+.content.split div {
+	flex-basis: 100%;
+}
+
+.content.split div + div {
+	margin-left: 3em;
+}
+
+.content h2 {
+	padding: 0px;
+	margin-bottom: 0.75em;
+}
+
+.content ul > li {
+	margin-bottom: 15px;
+}
+
+#whatsapp {
+	position: fixed;
+	height: 1em;
+	width: 1em;
+	color: white;
+	text-align: center;
+	bottom: .75em;
+	right: 0.75em;
+	font-size: 3.5em;
+	background-color: #41c051;
+	padding: 0.05em;
+	border-radius: 50% 50% 50% 15%;
+}
+
+#whatsapp i {
+	
 }
