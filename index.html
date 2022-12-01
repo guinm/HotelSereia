@@ -2,8 +2,11 @@
 	<head>
 		<title>Hotel Sereia</title>
 		<link rel="stylesheet" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="http://fonts.googleapis.com/css?family=Istok+Web:400,700" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+		<script src="script.js"></script>
 	</head>
 	<body>
 		<div id="menu">
@@ -40,6 +43,20 @@
 						<li>Apartamentos com cozinha para duas até quatro pessoas, todos com ar condicionado.</li>
 					</ul>
 				</div>
+				<div class="pics">
+					<ul>
+						<li class="on">Standart</li>
+						<li>Frente Mar</li>
+						<li>Suítes</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="content split">
+				<div>
+				
+				</div>
+				
 				<div>
 					<h2>Lazer:</h2>
 					<ul>
@@ -51,11 +68,31 @@
 						<li>Sauna.</li>
 					</ul>
 				</div>
-			</div>
+		</div>
 		</div>
 		
-		<div id="whatsapp">
-			<a><i class="fa-brands fa-whatsapp"></i></a>
+		
+		
+		<div id="SideMenu" class="card">
+			<p onClick="SocialToggle()">Social</p>
+			<div id="Socials">
+				<div id="whats">
+					<a href="https://wa.me/555136871212?text=Olá! Vim pelo site, gostaria de informações.">
+						<i class="fa-brands fa-whatsapp"></i>
+					</a>
+				</div>
+				<div id="face">
+					<a href="https://pt-br.facebook.com/HotelSereia/">
+						<i class="fa-brands fa-facebook-f"></i>
+					</a>
+				</div>
+				<div id="insta">
+					<a href="https://instagram.com/hotel_sereia">
+						<i class="fa-brands fa-instagram"></i>
+					</a>
+				</div>
+			</div>			
 		</div>
+		
 	</body>
 </html>

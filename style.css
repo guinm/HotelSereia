@@ -1,12 +1,20 @@
 :root {
 	--destaque: #00a990;
 	--azul-base: #1565af;
+	
+	--ff-destaque: Fontastique;
+	--ff-text: Istok Web;
 }
 
 @font-face { font-family: Fontastique; src: url('assets/fonts/fontastique.ttf'); }
 
 * {
 	margin: 0px;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
 }
 
 body {
@@ -50,6 +58,7 @@ body {
 
 #menu {
 	position: fixed;
+	z-index: 10;
 	height: 5em;
 	width: 100vw;
 	top: 0;
@@ -64,16 +73,17 @@ body {
 #menu img {
 	height: 5em;
 	display: flex;
-	margin-left: 5em;
+	margin-left: 6em;
 }
 
 #menu #opcs {
 	margin-right: 30px;
+	margin-right: 6em;
 }
 
 #opcs a{
 	display: inline-block;
-	font-family: Fontastique;
+	font-family: var(--ff-destaque);
 	position: relative;
 	z-index: 5;
 	color: var(--destaque);
@@ -130,14 +140,14 @@ h3 {
 	padding-top: 0.35em;
 	color: var(--destaque);
 	text-align: center;
-	font-family: Fontastique;
+	font-family: var(--ff-destaque);
 	cursor: default;
 }
 
 
 #main .content {
 	position: relative;
-	font-family: Istok Web;
+	font-family: var(--ff-text);
 	font-size: 1.25em;
 	text-align: justify;
 	padding: 1.5em;
@@ -187,20 +197,90 @@ h3 {
 	margin-bottom: 15px;
 }
 
-#whatsapp {
+#SideMenu {
+	display: flex;
 	position: fixed;
-	height: 1em;
-	width: 1em;
-	color: white;
+	top: 20vh;
+	right: -2.5em;
+	height: 120px;
+	width: 100px;
+	background-color: white;
+	font-family: var(--ff-destaque);
 	text-align: center;
-	bottom: .75em;
-	right: 0.75em;
-	font-size: 3.5em;
-	background-color: #41c051;
-	padding: 0.05em;
-	border-radius: 50% 50% 50% 15%;
+	font-size: 1.6em;
+	cursor: pointer;
+	transition: all 0.3s;
 }
 
-#whatsapp i {
-	
+#SideMenu:hover, #SideMenu.open {
+	right: -0.8em;
+}
+
+#SideMenu p {
+	position: absolute;
+	bottom: calc(35% - 5px);
+	left: calc(-37.5% );
+	width: calc(100% + 10px);
+	height: 30%;
+	transform: rotate(-90deg);
+	transform-origin(0 0);
+	background-color: var(--destaque);
+	color: white;
+	padding: 5px;
+}
+
+#SideMenu #Socials {
+	margin-left: 1.75em;
+    flex-flow: column;
+	justify-content: space-between;
+}
+
+#Socials div {
+	padding: 0.28em;
+	color: white;
+}
+
+#whats {
+	background-color: #25d366;
+}
+
+#face {
+	background-color: #1773ea;
+}
+
+#insta {
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.pics {
+	border: solid 3px var(--azul-base);
+	min-height: 25em;
+	margin-bottom: 1em;
+}
+
+.pics ul {
+	display: flex;
+	justify-content: space-evenly;
+	list-style-type: none;
+	padding: 0px;
+	border-bottom: 3px solid var(--azul-base);
+}
+
+.pics ul li {
+	display: inline;
+	margin: 0px;
+	line-height: 1.85em;
+	width: 33.3%;
+    text-align: center;
+	color: var(--azul-base);
+}
+
+.pics ul li:hover {
+	cursor: pointer;
+}
+
+.pics ul li.on {
+	background-color: var(--azul-base);
+	color: white;
+	font-weight: 450;
 }
