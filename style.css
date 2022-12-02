@@ -23,8 +23,7 @@ body {
 	scrollbar-width: none;
 	overflow-x: hidden;
 	background-color: var(--azul-base);
-	
-	
+	color: #111;
 }
 
 /*
@@ -66,7 +65,11 @@ body {
 }
 
 #menu li {
-	list-style-type: none;  
+	list-style-type: none;
+}
+
+li::marker {
+	color: var(--destaque);
 }
 
 #menu #opcs {
@@ -178,6 +181,10 @@ h3 {
 	padding: 1.5em;
 	display: flex;
 	line-height: 1.42em;
+}
+
+.content div {
+	margin-bottom: 25px;
 }
 
 #main .content.narrow {
@@ -379,6 +386,7 @@ div:has(.carousel) {
 img:nth-child(2) {
   animation-delay: 4s;
 }
+
 img:nth-child(3) {
   animation-delay: 8s;
 }
