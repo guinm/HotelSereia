@@ -2,22 +2,21 @@
 	<head>
 		<title>Hotel Sereia</title>
 		<link rel="stylesheet" href="style.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+		
 		<link href="http://fonts.googleapis.com/css?family=Istok+Web:400,700" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	
 		<script src="script.js"></script>
 	</head>
 	<body>
-		<div id="menu">
-			
-			
-			<div id="opcs">
-				<a>Sobre nós</a>
-				<a>Como chegar</a>
-				<a>Acomodações	</a>
-			</div>
-		</div>
+		<nav id="menu">
+			<ul id="opcs">
+				<li><a href="">Sobre nós</a></li>
+				<li><a href="">Como chegar</a></li>
+				<li><a href="">Acomodações	</a></li>
+			</ul>
+		</nav>
 		
 		
 		<div id="linha"></div>
@@ -26,6 +25,27 @@
 			<a href="index.html">
 				<img src="assets/img/logo.png">
 			</a>
+		</div>
+		
+		<div id="SideMenu" class="card">
+			<p onClick="SocialToggle()">Social</p>
+			<div id="Socials">
+				<div id="whats">
+					<a href="https://wa.me/555136871212?text=Olá! Vim pelo site, gostaria de informações." target="_blank" onfocus="SocialFocus(this)">
+						<i class="fa-brands fa-whatsapp"></i>
+					</a>
+				</div>
+				<div id="face">
+					<a href="https://pt-br.facebook.com/HotelSereia/" target="_blank">
+						<i class="fa-brands fa-facebook-f"></i>
+					</a>
+				</div>
+				<div id="insta">
+					<a href="https://instagram.com/hotel_sereia" target="_blank">
+						<i class="fa-brands fa-instagram"></i>
+					</a>
+				</div>
+			</div>			
 		</div>
 		
 		<div id="main" class="card">
@@ -52,10 +72,16 @@
 						<li>Comodidade e tranquilidade em nosso belíssimo Litoral Gaúcho</li>
 					</ul>
 				</div>
-				
 				<div>
+				<div class="carousel">
+					<img src="assets/img/img-1.jpg">
+					<img src="assets/img/img-1.jpg">
+					<img src="assets/img/img-1.jpg">
+					<img src="assets/img/img-1.jpg">
 					<img src="assets/img/img-1.jpg">
 				</div>
+				</div>
+				
 			</div>
 			
 			<div class="content split">
@@ -93,29 +119,6 @@
 					</ul>
 				</div>
 		</div>
-		</div>
-		
-		
-		
-		<div id="SideMenu" class="card">
-			<p onClick="SocialToggle()">Social</p>
-			<div id="Socials">
-				<div id="whats">
-					<a href="https://wa.me/555136871212?text=Olá! Vim pelo site, gostaria de informações." target="_blank">
-						<i class="fa-brands fa-whatsapp"></i>
-					</a>
-				</div>
-				<div id="face">
-					<a href="https://pt-br.facebook.com/HotelSereia/" target="_blank">
-						<i class="fa-brands fa-facebook-f"></i>
-					</a>
-				</div>
-				<div id="insta">
-					<a href="https://instagram.com/hotel_sereia" target="_blank">
-						<i class="fa-brands fa-instagram"></i>
-					</a>
-				</div>
-			</div>			
 		</div>
 		
 	</body>

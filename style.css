@@ -65,8 +65,13 @@ body {
 	box-shadow: 0px 5px 5px #0005;
 }
 
+#menu li {
+	list-style-type: none;  
+}
+
 #menu #opcs {
 	margin-right: 30px;
+	display: flex;
 }
 
 #opcs a{
@@ -176,6 +181,7 @@ h3 {
 }
 
 #main .content.narrow {
+	text-align: center;
 	padding: 1.5em 15em 1.5em 15em;
 }
 
@@ -241,25 +247,26 @@ h3 {
 #SideMenu {
 	display: flex;
 	position: fixed;
-	top: 15vh;
-	right: -2em;
+	top: 14vh;
+	right: -2.5em;
 	height: 200px;
-	width: 100px;
+	width: 115px;
 	background-color: white;
 	font-family: var(--ff-destaque);
 	text-align: center;
 	font-size: 1.6em;
 	cursor: pointer;
 	transition: all 0.3s;
+	overflow: hidden;
 }
 
 #SideMenu:hover, #SideMenu.open {
-	right: 0.45em;
+	right: -0.52em;
 }
 
 #SideMenu p {
 	position: absolute;
-	left: -75%;
+	left: -77%;
     bottom: 37.5%;
 	width: calc(180% + 10px);
 	height: 20%;
@@ -325,4 +332,122 @@ h3 {
 	background-color: var(--azul-base);
 	color: white;
 	font-weight: 450;
+}
+
+@media only screen and (max-width: 680px) {
+	#menu {
+		height: 5em;
+		justify-content: center;
+	}
+	
+	#menu #opcs {
+		margin: 0;
+		margin-block-start: 0;
+		padding-inline-start: 0;
+	}
+	
+	#menu li a {
+		margin: 5px;
+		font-size: 1.2em;
+	}
+	
+	#linha {
+		top: 8.5em;
+		height: 3.5em;
+	}
+	
+	#logo-banner {
+		margin-top: 7em;
+		width: 15em;
+		height: 7em;
+	}
+	
+	#logo-banner img {
+		width: 12em;
+	}
+	
+	#main {
+		width: 100vw;
+		margin-top: 5vh;
+		font-size: 0.8em;
+	}
+	
+	#main .content {
+		padding: 5px 0px 50px 0px;
+	}
+	
+	#main .content.narrow {
+		padding: 35px 50px;
+		text-align: justify;
+	}
+	
+	.content.split {
+		flex-direction: column;
+	}
+	
+	#SideMenu {
+		backface-visibility: hidden;
+		z-index: 101;
+		top: 9.4vh;
+	}
+	
+	.content.split div + div {
+		margin: 0;
+	}
+}
+
+
+
+
+
+
+
+
+@keyframes display {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+}
+
+.carousel {
+  position: relative;
+  width: 100vw;
+  height: 300px;
+}
+
+.carousel > img {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  animation: display 20s infinite;
+}
+
+img:nth-child(2) {
+  animation-delay: 4s;
+}
+img:nth-child(3) {
+  animation-delay: 8s;
+}
+img:nth-child(4) {
+  animation-delay: 12s;
+}
+img:nth-child(5) {
+  animation-delay: 16s;
 }
