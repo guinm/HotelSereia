@@ -434,7 +434,7 @@ img:nth-child(10) {
 		padding-inline-start: 0;
 	}
 	
-	#menu li a {
+	#menu li button {
 		margin: 5px;
 		font-size: 1.2em;
 	}
@@ -485,6 +485,15 @@ img:nth-child(10) {
 	
 	.carousel {
 		width: 100vw;
+	}
+	
+	#contato {
+		flex-direction: column;
+		flex-flow: wrap;
+	}
+	
+	#contato button {
+		width: 80%;
 	}
 }
 
