@@ -3,7 +3,7 @@
 	--azul-base: #1565af;
 	
 	--ff-destaque: Fontastique;
-	--ff-text: Istok Web;
+	--ff-text: "Istok Web";
 }
 
 @font-face { font-family: Fontastique; src: url('assets/fonts/fontastique.ttf'); }
@@ -77,7 +77,7 @@ li::marker {
 	display: flex;
 }
 
-#opcs a{
+#opcs button, #contato button{
 	display: inline-block;
 	font-family: var(--ff-destaque);
 	position: relative;
@@ -90,6 +90,7 @@ li::marker {
 	padding: .35em;
 	transition: all 0.35s;
 	overflow: hidden;
+	background: transparent;
 }
 
 #logo-banner {
@@ -114,7 +115,7 @@ li::marker {
 	box-shadow: 0px 0px 5px #00000088;
 }
 
-#opcs a::before{
+#contato button::before, #opcs button::before{
 	content: '';
 	position: absolute;
 	bottom: -120%;
@@ -128,15 +129,15 @@ li::marker {
 	line-height: inherit;
 }
 
-#opcs a:hover::before {
+#contato button:hover::before,  #opcs button:hover::before{
 	bottom: 0px;
 }
 
-a:hover {
+button:hover {
 	cursor: pointer;
 }
 
-#opcs a:hover {
+#contato button:hover, #opcs button:hover {
 	color: white;
 }
 
@@ -376,7 +377,7 @@ h3 {
   top: 0;
   opacity: 0;
   width: 100%;
-  animation: display 20s infinite;
+  animation: display 40s infinite;
 }
 
 div:has(.carousel) {
@@ -386,7 +387,6 @@ div:has(.carousel) {
 img:nth-child(2) {
   animation-delay: 4s;
 }
-
 img:nth-child(3) {
   animation-delay: 8s;
 }
@@ -396,9 +396,30 @@ img:nth-child(4) {
 img:nth-child(5) {
   animation-delay: 16s;
 }
+img:nth-child(6) {
+  animation-delay: 20s;
+}
+img:nth-child(7) {
+  animation-delay: 24s;
+}
+img:nth-child(8) {
+  animation-delay: 28s;
+}
+img:nth-child(9) {
+  animation-delay: 32s;
+}
+img:nth-child(10) {
+  animation-delay: 36s;
+}
 
 .ar169 {
 	aspect-ratio: 16/9;
+}
+
+#contato {
+	padding: 2em 0 2em 0;
+	display: flex;
+	justify-content: center;
 }
 
 @media only screen and (max-width: 680px) {
