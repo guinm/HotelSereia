@@ -1,0 +1,96 @@
+<html>
+	<head>
+		<title>Hotel Sereia</title>
+		<link rel="stylesheet" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+		
+		<link href="http://fonts.googleapis.com/css?family=Istok+Web:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<nav id="menu">
+			<ul id="opcs">
+				<li><button class="pdg_extra" onClick="location.href='index.html'">Início</button></li>
+				<li><button onClick="location.href=''">Acomodações</button></li>
+				
+				<li><button onClick="location.href=''">Mais fotos</button></li>
+			</ul>
+		</nav>
+		
+		
+		<div id="linha"></div>
+		<div id="logo-banner">
+			
+			<a href="index.html">
+				<img src="assets/img/logo.png">
+			</a>
+		</div>
+		
+		<div id="SideMenu" class="card">
+			<p onClick="SocialToggle()">Social</p>
+			<div id="Socials">
+				<div id="whats">
+					<a href="https://wa.me/555136871212?text=Olá! Vim pelo site, gostaria de informações." target="_blank" onfocus="SocialFocus(this)">
+						<i class="fa-brands fa-whatsapp"></i>
+					</a>
+				</div>
+				<div id="face">
+					<a href="https://pt-br.facebook.com/HotelSereia/" target="_blank">
+						<i class="fa-brands fa-facebook-f"></i>
+					</a>
+				</div>
+				<div id="insta">
+					<a href="https://instagram.com/hotel_sereia" target="_blank">
+						<i class="fa-brands fa-instagram"></i>
+					</a>
+				</div>
+			</div>			
+		</div>
+		
+		<div id="main" class="card">
+			<div class="title"> 
+				<h1>Como chegar</h1>
+			</div>
+			
+			<div class="content split s6040 no_underline chegar">
+				<div>
+					<div class="mapouter">
+						<div class="gmap_canvas">
+							<iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Hotel Sereia Arroio do Sal&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+						</div>
+					</div>
+				</div>
+					
+				<div>
+					<p>Para chegar no Hotel Sereia é extremamente simples!</p>
+					<p>Ao entrar em Arroio do Sal pela entrada principal (Av. Assis Brasil) basta segui-la até o fim,
+					na Av. Beira Mar, faça a curva à direita, após isso ficamos na segunda quadra à sua direita.</p>
+					<p>Enquanto se encaminha até nós, deve por passar por diversos restaurantes, vale uma anotação para visita-los depois, e o mais importante, a nossa belíssima praia fica logo à nossa frente!</p>
+				</div>
+			</div>
+		</div>
+	</body>
+	
+	<style>
+		.mapouter{
+			position:relative;
+			text-align:right;
+			width:100%;
+			height:400px;
+		}
+		
+		.gmap_canvas {
+			overflow:hidden;
+			background:none !important;
+			width:100%;
+			height:400px;
+		}
+		
+		.gmap_iframe {
+			height:400px !important;
+		}
+		</style>
+</html>
+		
