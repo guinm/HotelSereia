@@ -1,6 +1,8 @@
 :root {
 	--destaque: #00a990;
 	--azul-base: #1565af;
+	--whats: #25d366;
+	--face: #1773ea;
 	
 	--ff-destaque: Fontastique;
 	--ff-text: "Istok Web";
@@ -276,6 +278,7 @@ h3 {
 #SideMenu {
 	display: flex;
 	position: fixed;
+	z-index: 105;
 	top: 14vh;
 	right: -2.55em;
 	height: 200px;
@@ -319,11 +322,11 @@ h3 {
 }
 
 #whats {
-	background-color: #25d366;
+	background-color: var(--whats);
 }
 
 #face {
-	background-color: #1773ea;
+	background-color: var(--face);
 }
 
 #insta {
@@ -440,6 +443,49 @@ img:nth-child(10) {
 	padding: 2em 0 2em 0;
 	display: flex;
 	justify-content: center;
+}
+
+.tg  {
+	border-collapse:collapse;
+	border-spacing:0;
+
+}
+.tg td{
+	border-color: #104b81;
+	border-style:solid;
+	border-width:2px;
+	font-size:14px;
+	overflow:hidden;
+	padding:10px 5px;
+	word-break:normal;
+}
+
+thead {
+	background-color: var(--azul-base);
+}
+
+.tg th{
+	border-color: #104b81;
+	border-style:solid;
+	border-width:2px;
+	font-size:18px;
+	overflow:hidden;
+	padding:10px 5px;
+	word-break:normal;
+	text-align: center;
+}
+
+.tg .tg-0lax{
+
+	vertical-align:top
+}
+
+tr td:not(:first-of-type) {
+	text-align: center;
+}
+
+table + p {
+	font-size: 0.8em; 
 }
 
 @media only screen and (max-width: 680px) {

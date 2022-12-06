@@ -1,0 +1,148 @@
+<html>
+	<head>
+		<title>Hotel Sereia</title>
+		<link rel="stylesheet" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		
+		<link href="http://fonts.googleapis.com/css?family=Istok+Web:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<nav id="menu">
+			<ul id="opcs">
+				<li><button onClick="location.href='index.html'">Início</button></li>
+				<li><button onClick="location.href='como_chegar.html'">Como chegar</button></li>
+				<li><button onClick="location.href=''">Mais fotos</button></li>
+			</ul>
+		</nav>
+		
+		
+		<div id="linha"></div>
+		<div id="logo-banner">
+			
+			<a href="index.html">
+				<img src="assets/img/logo.png">
+			</a>
+		</div>
+		
+		<div id="SideMenu" class="card">
+			<p onClick="SocialToggle()">Social</p>
+			<div id="Socials">
+				<div id="whats">
+					<a href="https://wa.me/555136871212?text=Olá! Vim pelo site, gostaria de informações." target="_blank" onfocus="SocialFocus(this)">
+						<i class="fa-brands fa-whatsapp"></i>
+					</a>
+				</div>
+				<div id="face">
+					<a href="https://pt-br.facebook.com/HotelSereia/" target="_blank">
+						<i class="fa-brands fa-facebook-f"></i>
+					</a>
+				</div>
+				<div id="insta">
+					<a href="https://instagram.com/hotel_sereia" target="_blank">
+						<i class="fa-brands fa-instagram"></i>
+					</a>
+				</div>
+			</div>			
+		</div>
+		
+		<div id="main" class="card">
+			<div class="title"> 
+				<h1>Acomodações</h1>
+			</div>
+			
+			<div class="content">
+				<div>
+					<h3>Preços em reais (R$) por apartamento/por noite com café da manhã</h3>
+					<table class="tg">
+						<thead>
+							<tr>
+								<th class="tg-0lax">Apartamentos</th>
+								<th class="tg-0lax">1 Pessoa</th>
+								<th class="tg-0lax">2 Pessoas</th>
+								<th class="tg-0lax">3 Pessoas</th>
+								<th class="tg-0lax">4 Pessoas</th>
+								<th class="tg-0lax">5 Pessoas</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="tg-0lax">Vista Mar / Vista Piscina Simples*</td>
+								<td class="tg-0lax">180,00</td>
+								<td class="tg-0lax">285,00</td>
+								<td class="tg-0lax">-</td>
+								<td class="tg-0lax">-</td>
+								<td class="tg-0lax">-</td>
+							</tr>
+							<tr>
+								<td class="tg-0lax">Vista Mar 1º Andar</td>
+								<td class="tg-0lax">280,00</td>
+								<td class="tg-0lax">360,00</td>
+								<td class="tg-0lax">-</td>
+								<td class="tg-0lax">-</td>
+								<td class="tg-0lax">-</td>
+							</tr>
+							<tr>
+								<td class="tg-0lax">Vista Piscina</td>
+								<td class="tg-0lax">260,00</td>
+								<td class="tg-0lax">340,00</td>
+								<td class="tg-0lax">430,00</td>
+								<td class="tg-0lax">-</td>
+								<td class="tg-0lax">-</td>
+							</tr>
+							<tr>
+								<td class="tg-0lax">Lateral Mar e Vista Serra</td>
+								<td class="tg-0lax">260,00</td>
+								<td class="tg-0lax">330,00</td>
+								<td class="tg-0lax">420,00</td>
+								<td class="tg-0lax">-</td>
+								<td class="tg-0lax">-</td>
+							</tr>
+							<tr>
+								<td class="tg-0lax">Conjugado Vista Mar 1º Andar</td>
+								<td class="tg-0lax">-</td>
+								<td class="tg-0lax">380,00</td>
+								<td class="tg-0lax">490,00</td>
+								<td class="tg-0lax">560,00</td>
+								<td class="tg-0lax">-</td>
+							</tr>
+							<tr>
+								<td class="tg-0lax">Conjugado Vista Piscina Térreo</td>
+								<td class="tg-0lax">-</td>
+								<td class="tg-0lax">360,00</td>
+								<td class="tg-0lax">470,00</td>
+								<td class="tg-0lax">520,00</td>
+								<td class="tg-0lax">600,00</td>
+							</tr>
+							<tr>
+								<td class="tg-0lax">Conjugado Vista Mar Térreo, 02 Banheiros com mini cozinha</td>
+								<td class="tg-0lax">-</td>
+								<td class="tg-0lax">-</td>
+								<td class="tg-0lax">480,00</td>
+								<td class="tg-0lax">570,00</td>
+								<td class="tg-0lax">630,00</td>
+							</tr>
+							<tr>
+								<td class="tg-0lax">Conjugado Vista Serra/Pátio com mini cozinha</td>
+								<td class="tg-0lax">-</td>
+								<td class="tg-0lax">380,00</td>
+								<td class="tg-0lax">460,00</td>
+								<td class="tg-0lax">530,00</td>
+								<td class="tg-0lax">-</td>
+							</tr>
+						</tbody>
+					</table>
+					<p>* Apto Simples com ventilador de teto. Demais aptos com ar-condicionado, sendo que nos conjugados o ar-condicionado (12.000 Btus) é em apenas um dos quartos e no outro quarto tem ventilador de teto.</p>
+				</div>
+				
+				<div>
+				
+				</div>
+				
+			</div>
+		</div>
+	</body>
+</html>
