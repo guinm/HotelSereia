@@ -445,6 +445,15 @@ img:nth-child(10) {
 	justify-content: center;
 }
 
+#main .center-table {
+	text-align: center;
+	flex-direction: column
+}
+
+.center-table table {
+	display: inline-table;
+}
+
 .tg  {
 	border-collapse:collapse;
 	border-spacing:0;
@@ -466,6 +475,7 @@ thead {
 
 .tg th{
 	border-color: #104b81;
+	color: #FFF;
 	border-style:solid;
 	border-width:2px;
 	font-size:18px;
@@ -476,7 +486,6 @@ thead {
 }
 
 .tg .tg-0lax{
-
 	vertical-align:top
 }
 
@@ -486,6 +495,10 @@ tr td:not(:first-of-type) {
 
 table + p {
 	font-size: 0.8em; 
+}
+
+.destaque {
+	color: red;
 }
 
 @media only screen and (max-width: 680px) {
@@ -568,6 +581,10 @@ table + p {
 	
 	#main .chegar p:first-of-type {
 		margin-top: 2.5em;
+	}
+	
+	.tg th, .tg td {
+		font-size: 0.7em;
 	}
 }
 
