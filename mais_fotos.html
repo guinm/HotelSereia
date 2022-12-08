@@ -1,0 +1,165 @@
+<html>
+	<head>
+		<title>Hotel Sereia</title>
+		<link rel="stylesheet" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+		
+		<link href="http://fonts.googleapis.com/css?family=Istok+Web:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<nav id="menu">
+			<ul id="opcs">
+				<li><button class="pdg_extra" onClick="location.href='index.html'">Início</button></li>
+				<li><button onClick="location.href='acomodacoes.html'">Acomodações</button></li>
+				<li><button onClick="location.href='como_chegar.html'">Como chegar</button></li>
+			</ul>
+		</nav>
+		
+		
+		<div id="linha"></div>
+		<div id="logo-banner">
+			
+			<a href="index.html">
+				<img src="assets/img/logo.png">
+			</a>
+		</div>
+		
+		<div id="SideMenu" class="card">
+			<p onClick="SocialToggle()">Social</p>
+			<div id="Socials">
+				<div id="whats">
+					<a href="https://wa.me/555136871212?text=Olá! Vim pelo site, gostaria de informações." target="_blank" onfocus="SocialFocus(this)">
+						<i class="fa-brands fa-whatsapp"></i>
+					</a>
+				</div>
+				<div id="face">
+					<a href="https://pt-br.facebook.com/HotelSereia/" target="_blank">
+						<i class="fa-brands fa-facebook-f"></i>
+					</a>
+				</div>
+				<div id="insta">
+					<a href="https://instagram.com/hotel_sereia" target="_blank">
+						<i class="fa-brands fa-instagram"></i>
+					</a>
+				</div>
+			</div>			
+		</div>
+		
+		<div id="main" class="card">
+			<div class="title"> 
+				<h1>Acomodações - Fotos</h1>
+			</div>
+			
+			<div class="content">
+				<div>
+					<h3>Clique em uma imagem para abrir uma conversa do WhatsApp conosco referente à sua escolha</h3>
+				
+					<section>
+						<div class="container">
+							<div class="carousel">
+								<input type="radio" name="slides" checked="checked" id="slide-1">
+								<input type="radio" name="slides" id="slide-2">
+								<input type="radio" name="slides" id="slide-3">
+								<input type="radio" name="slides" id="slide-4">
+								<input type="radio" name="slides" id="slide-5">
+								<input type="radio" name="slides" id="slide-6">
+								<ul class="carousel__slides">
+									<li class="carousel__slide">
+										<figure>
+											<div>
+												<img src="https://picsum.photos/id/1041/800/450" alt="">
+											</div>
+											<figcaption>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												<span class="credit">Photo: Tim Marshall</span>
+											</figcaption>
+										</figure>
+									</li>
+									<li class="carousel__slide">
+										<figure>
+											<div>
+												<img src="https://picsum.photos/id/1043/800/450" alt="">
+											</div>
+											<figcaption>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												<span class="credit">Photo: Christian Joudrey</span>                            
+											</figcaption>
+										</figure>
+									</li>
+									<li class="carousel__slide">
+										<figure>
+											<div>
+												<img src="https://picsum.photos/id/1044/800/450" alt="">
+											</div>
+											<figcaption>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												<span class="credit">Photo: Steve Carter</span>                            
+											</figcaption>
+										</figure>
+									</li>
+									<li class="carousel__slide">
+										<figure>
+											<div>
+												<img src="https://picsum.photos/id/1045/800/450" alt="">
+											</div>
+											<figcaption>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												<span class="credit">Photo: Aleksandra Boguslawska</span>                            
+											</figcaption>
+										</figure>
+									</li>
+									<li class="carousel__slide">
+										<figure>
+											<div>
+												<img src="https://picsum.photos/id/1049/800/450" alt="">
+											</div>
+											<figcaption>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												<span class="credit">Photo: Rosan Harmens</span>                            
+											</figcaption>
+										</figure>
+									</li>
+									<li class="carousel__slide">
+										<figure>
+											<div>
+												<img src="https://picsum.photos/id/1052/800/450" alt="">
+											</div>
+											<figcaption>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												<span class="credit">Photo: Annie Spratt</span>                            
+											</figcaption>
+										</figure>
+									</li>
+								</ul>    
+								<ul class="carousel__thumbnails">
+									<li>
+										<label for="slide-1"><img src="https://picsum.photos/id/1041/150/150" alt=""></label>
+									</li>
+									<li>
+										<label for="slide-2"><img src="https://picsum.photos/id/1043/150/150" alt=""></label>
+									</li>
+									<li>
+										<label for="slide-3"><img src="https://picsum.photos/id/1044/150/150" alt=""></label>
+									</li>
+									<li>
+										<label for="slide-4"><img src="https://picsum.photos/id/1045/150/150" alt=""></label>
+									</li>
+									<li>
+										<label for="slide-5"><img src="https://picsum.photos/id/1049/150/150" alt=""></label>
+									</li>
+									<li>
+										<label for="slide-6"><img src="https://picsum.photos/id/1052/150/150" alt=""></label>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+				</div>
+			
+			</div>
+		</div>
+	</body>
+</html>
