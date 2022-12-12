@@ -595,6 +595,20 @@ table + p {
 		width: calc(100vw - 50px);
 		margin: 5px 25px;
 	}
+	
+	.container {
+		padding: 0;
+	}
+	
+	.carousel__slide figure {
+		flex-direction: column;
+	}
+	
+	.carousel__slide figure figcaption {
+		margin: 0 auto;
+		padding: 0;
+		width: 100%;
+	}
 }
 
 
@@ -628,7 +642,7 @@ section {
   padding: 50px 0;
 }
 .container {
-  max-width: 1044px;
+  max-width: 95vw;
   margin: 0 auto;
   padding: 0 20px;
 }
