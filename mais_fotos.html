@@ -8,6 +8,11 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	
 		<script src="script.js"></script>
+		
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<nav id="menu">
@@ -48,118 +53,18 @@
 			</div>			
 		</div>
 		
-		<div id="main" class="card">
-			<div class="title"> 
-				<h1>Acomodações - Fotos</h1>
+		<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+		  <div class="carousel-inner">
+			<div class="carousel-item active">
+			  <img class="d-block w-100" src="..." alt="First slide">
 			</div>
-			
-			<div class="content">
-				<div>
-					<h3>Clique em uma imagem para abrir uma conversa do WhatsApp conosco referente à sua escolha</h3>
-				
-					<section>
-						<div class="container">
-							<div class="carousel">
-								<input type="radio" name="slides" checked="checked" id="slide-1">
-								<input type="radio" name="slides" id="slide-2">
-								<input type="radio" name="slides" id="slide-3">
-								<input type="radio" name="slides" id="slide-4">
-								<input type="radio" name="slides" id="slide-5">
-								<input type="radio" name="slides" id="slide-6">
-								<ul class="carousel__slides">
-									<li class="carousel__slide">
-										<figure>
-											<div>
-												<img src="https://picsum.photos/id/1041/800/450" alt="">
-											</div>
-											<figcaption>
-												Lorem ipsum dolor sit amet consectetur adipisicing elit.
-												<span class="credit">Photo: Tim Marshall</span>
-											</figcaption>
-										</figure>
-									</li>
-									<li class="carousel__slide">
-										<figure>
-											<div>
-												<img src="https://picsum.photos/id/1043/800/450" alt="">
-											</div>
-											<figcaption>
-												Lorem ipsum dolor sit amet consectetur adipisicing elit.
-												<span class="credit">Photo: Christian Joudrey</span>                            
-											</figcaption>
-										</figure>
-									</li>
-									<li class="carousel__slide">
-										<figure>
-											<div>
-												<img src="https://picsum.photos/id/1044/800/450" alt="">
-											</div>
-											<figcaption>
-												Lorem ipsum dolor sit amet consectetur adipisicing elit.
-												<span class="credit">Photo: Steve Carter</span>                            
-											</figcaption>
-										</figure>
-									</li>
-									<li class="carousel__slide">
-										<figure>
-											<div>
-												<img src="https://picsum.photos/id/1045/800/450" alt="">
-											</div>
-											<figcaption>
-												Lorem ipsum dolor sit amet consectetur adipisicing elit.
-												<span class="credit">Photo: Aleksandra Boguslawska</span>                            
-											</figcaption>
-										</figure>
-									</li>
-									<li class="carousel__slide">
-										<figure>
-											<div>
-												<img src="https://picsum.photos/id/1049/800/450" alt="">
-											</div>
-											<figcaption>
-												Lorem ipsum dolor sit amet consectetur adipisicing elit.
-												<span class="credit">Photo: Rosan Harmens</span>                            
-											</figcaption>
-										</figure>
-									</li>
-									<li class="carousel__slide">
-										<figure>
-											<div>
-												<img src="https://picsum.photos/id/1052/800/450" alt="">
-											</div>
-											<figcaption>
-												Lorem ipsum dolor sit amet consectetur adipisicing elit.
-												<span class="credit">Photo: Annie Spratt</span>                            
-											</figcaption>
-										</figure>
-									</li>
-								</ul>    
-								<ul class="carousel__thumbnails">
-									<li>
-										<label for="slide-1"><img src="https://picsum.photos/id/1041/150/150" alt=""></label>
-									</li>
-									<li>
-										<label for="slide-2"><img src="https://picsum.photos/id/1043/150/150" alt=""></label>
-									</li>
-									<li>
-										<label for="slide-3"><img src="https://picsum.photos/id/1044/150/150" alt=""></label>
-									</li>
-									<li>
-										<label for="slide-4"><img src="https://picsum.photos/id/1045/150/150" alt=""></label>
-									</li>
-									<li>
-										<label for="slide-5"><img src="https://picsum.photos/id/1049/150/150" alt=""></label>
-									</li>
-									<li>
-										<label for="slide-6"><img src="https://picsum.photos/id/1052/150/150" alt=""></label>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</section>
-				</div>
-			
+			<div class="carousel-item">
+			  <img class="d-block w-100" src="..." alt="Second slide">
 			</div>
+			<div class="carousel-item">
+			  <img class="d-block w-100" src="..." alt="Third slide">
+			</div>
+		  </div>
 		</div>
 	</body>
 </html>
