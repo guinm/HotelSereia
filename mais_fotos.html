@@ -8,12 +8,26 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	
 		<script src="script.js"></script>
-		
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	</head>
+	
+	<style>
+		
+		.photo-grid {
+			margin: 0 auto;
+		}
+		
+		.content ul {
+			padding-inline-start: 0px;
+		}
+		
+		.content ul > li {
+			margin: 0px;
+		}
+		
+		.content::before {
+			width: 0;
+		}
+	</style>
 	<body>
 		<nav id="menu">
 			<ul id="opcs">
@@ -33,6 +47,7 @@
 		</div>
 		
 		<div id="SideMenu" class="card">
+			
 			<p onClick="SocialToggle()">Social</p>
 			<div id="Socials">
 				<div id="whats">
@@ -53,18 +68,313 @@
 			</div>			
 		</div>
 		
-		<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-		  <div class="carousel-inner">
-			<div class="carousel-item active">
-			  <img class="d-block w-100" src="..." alt="First slide">
+		<div id="main" class="card">
+			<div class="title">
+				<h1>Acomodações - Mais Fotos</h1>
 			</div>
-			<div class="carousel-item">
-			  <img class="d-block w-100" src="..." alt="Second slide">
+		
+			<div class="content">
+				
+				
+				<section class='photo-grid'>
+				
+					<ul class='grid-isotope'>
+						<li class='photo-grid-item'>
+							<figure>
+								<picture>
+									<source media='(max-width: 3000px)' srcset='assets/img/mais_fotos/casal_vista_mar.jpg, assets/img/mais_fotos/casal_vista_mar.jpg 2x'>
+									<img alt='' src='assets/img/mais_fotos/casal_vista_mar.jpg'>
+								</picture>
+								<figcaption>
+									<fieldset>
+										<input id='casal_vista_mar_cama' type='checkbox' checked="true">
+										<label class='photo-close' for='casal_vista_mar_cama'></label>
+										<dl>
+											Apartamento Casal Vista Mar
+										</dl>
+									</fieldset>
+								</figcaption>
+							</figure>
+						</li>
+						
+						<li class='photo-grid-item'>
+							<figure>
+								<picture>
+									<source media='(max-width: 3000px)' srcset='assets/img/mais_fotos/casal_vista_mar_ar_tv.jpg, assets/img/mais_fotos/casal_vista_mar_ar_tv.jpg 2x'>
+									<img alt='' src='assets/img/mais_fotos/casal_vista_mar_ar_tv.jpg'>
+								</picture>
+								<figcaption>
+									<fieldset>
+										<input id='casal_vista_mar_ar_tv' type='checkbox' checked="true">
+										<label class='photo-close' for='casal_vista_mar_ar_tv'></label>
+										<dl>
+											Apartamento Casal Vista Mar
+										</dl>
+									</fieldset>
+								</figcaption>
+							</figure>
+						</li>
+						
+						<li class='photo-grid-item'>
+							<figure>
+								<picture>
+									<source media='(max-width: 3000px)' srcset='assets/img/mais_fotos/casal_vista_mar_vista.jpg, assets/img/mais_fotos/casal_vista_mar_vista.jpg 2x'>
+									<img alt='' src='assets/img/mais_fotos/casal_vista_mar.jpg'>
+								</picture>
+								<figcaption>
+									<fieldset>
+										<input id='casal_vista_mar_vista' type='checkbox' checked="true">
+										<label class='photo-close' for='casal_vista_mar_vista'></label>
+										<dl>
+											Apartamento Casal Vista Mar
+										</dl>
+									</fieldset>
+								</figcaption>
+							</figure>
+						</li>
+						
+						<li class='photo-grid-item'>
+							<figure>
+								<picture>
+									<source media='(max-width: 3000px)' srcset='assets/img/mais_fotos/conjugado_vista_mar.jpg, assets/img/mais_fotos/conjugado_vista_mar.jpg 2x'>
+									<img alt='' src='assets/img/mais_fotos/conjugado_terreo.jpg'>
+								</picture>
+								<figcaption>
+									<fieldset>
+										<input id='conjugado_vista_mar' type='checkbox' checked="true">
+										<label class='photo-close' for='conjugado_vista_mar'></label>
+										<dl>
+											Conjugado Vista Mar
+										</dl>
+									</fieldset>
+								</figcaption>
+							</figure>
+						</li>
+						
+						<li class='photo-grid-item'>
+							<figure>
+								<picture>
+									<source media='(max-width: 3000px)' srcset='assets/img/mais_fotos/conjugado_vista_mar_2.jpg, assets/img/mais_fotos/conjugado_vista_mar_2.jpg 2x'>
+									<img alt='' src='assets/img/mais_fotos/casal_vista_mar.jpg'>
+								</picture>
+								<figcaption>
+									<fieldset>
+										<input id='conjugado_vista_mar_2' type='checkbox' checked="true">
+										<label class='photo-close' for='conjugado_vista_mar_2'></label>
+										<dl>
+											Conjugado Vista Mar
+										</dl>
+									</fieldset>
+								</figcaption>
+							</figure>
+						</li>
+						
+						<li class='photo-grid-item'>
+							<figure>
+								<picture>
+									<source media='(max-width: 3000px)' srcset='assets/img/mais_fotos/conjugado_vista_mar_tv_cozinha.jpg, assets/img/mais_fotos/conjugado_vista_mar_tv_cozinha.jpg 2x'>
+									<img class="center_bot" alt='' src='assets/img/mais_fotos/casal_vista_mar.jpg'>
+								</picture>
+								<figcaption>
+									<fieldset>
+										<input id='conjugado_vista_mar_tv_cozinha' type='checkbox' checked="true">
+										<label class='photo-close' for='conjugado_vista_mar_tv_cozinha'></label>
+										<dl>
+											Conjugado Vista Mar
+										</dl>
+									</fieldset>
+								</figcaption>
+							</figure>
+						</li>
+						
+						<li class='photo-grid-item'>
+							<figure>
+								<picture>
+									<source media='(max-width: 3000px)' srcset='assets/img/mais_fotos/conjugado_vista_mar_vista.jpg, assets/img/mais_fotos/conjugado_vista_mar_vista.jpg 2x'>
+									<img alt='' src='assets/img/mais_fotos/casal_vista_mar.jpg'>
+								</picture>
+								<figcaption>
+									<fieldset>
+										<input id='conjugado_vista_mar_vista' type='checkbox' checked="true">
+										<label class='photo-close' for='conjugado_vista_mar_vista'></label>
+										<dl>
+											Conjugado Vista Mar
+										</dl>
+									</fieldset>
+								</figcaption>
+							</figure>
+						</li>
+						
+						<li class='photo-grid-item'>
+							<figure>
+								<picture>
+									<source media='(max-width: 3000px)' srcset='assets/img/mais_fotos/conjugado_vista_mar_terreo.jpg, assets/img/mais_fotos/conjugado_vista_mar_terreo.jpg 2x'>
+									<img alt='' src='assets/img/mais_fotos/casal_vista_mar.jpg'>
+								</picture>
+								<figcaption>
+									<fieldset>
+										<input id='conjugado_vista_mar_terreo' type='checkbox' checked="true">
+										<label class='photo-close' for='conjugado_vista_mar_terreo'></label>
+										<dl>
+											Conjugado Vista Mar Térreo
+										</dl>
+									</fieldset>
+								</figcaption>
+							</figure>
+						</li>
+						
+						<li class='photo-grid-item'>
+							<figure>
+								<picture>
+									<source media='(max-width: 3000px)' srcset='assets/img/mais_fotos/conjugado_vista_mar_terreo_2.jpg, assets/img/mais_fotos/conjugado_vista_mar_terreo_2.jpg 2x'>
+									<img alt='' src='assets/img/mais_fotos/casal_vista_mar.jpg'>
+								</picture>
+								<figcaption>
+									<fieldset>
+										<input id='conjugado_vista_mar_terreo_2' type='checkbox' checked="true">
+										<label class='photo-close' for='conjugado_vista_mar_terreo_2'></label>
+										<dl>
+											Conjugado Vista Mar Térreo
+										</dl>
+									</fieldset>
+								</figcaption>
+							</figure>
+						</li>
+						
+						<li class='photo-grid-item'>
+							<figure>
+								<picture>
+									<source media='(max-width: 3000px)' srcset='assets/img/mais_fotos/conjugado_vista_mar_terreo_vista.jpg, assets/img/mais_fotos/conjugado_vista_mar_terreo_vista.jpg 2x'>
+									<img alt='' src='assets/img/mais_fotos/casal_vista_mar.jpg'>
+								</picture>
+								<figcaption>
+									<fieldset>
+										<input id='conjugado_vista_mar_terreo_vista' type='checkbox' checked="true">
+										<label class='photo-close' for='conjugado_vista_mar_terreo_vista'></label>
+										<dl>
+											Conjugado Vista Mar Térreo
+										</dl>
+									</fieldset>
+								</figcaption>
+							</figure>
+						</li>
+						
+						<li class='photo-grid-item'>
+							<figure>
+								<picture>
+									<source media='(max-width: 3000px)' srcset='assets/img/mais_fotos/conjugado_vista_mar_2.jpg, assets/img/mais_fotos/conjugado_vista_mar_2.jpg 2x'>
+									<img alt='' src='assets/img/mais_fotos/casal_vista_mar.jpg'>
+								</picture>
+								<figcaption>
+									<fieldset>
+										<input id='conjugado_vista_mar_2' type='checkbox' checked="true">
+										<label class='photo-close' for='conjugado_vista_mar_2'></label>
+										<dl>
+											Conjugado Vista Mar
+										</dl>
+									</fieldset>
+								</figcaption>
+							</figure>
+						</li>
+						
+						<li class='photo-grid-item'>
+							<figure>
+								<picture>
+									<source media='(max-width: 3000px)' srcset='assets/img/mais_fotos/patio_piscina.jpg, assets/img/mais_fotos/patio_piscina.jpg 2x'>
+									<img alt='' src='assets/img/mais_fotos/casal_vista_mar.jpg'>
+								</picture>
+								<figcaption>
+									<fieldset>
+										<input id='patio_piscina' type='checkbox' checked="true">
+										<label class='photo-close' for='patio_piscina'></label>
+										<dl>
+											Pátio Interno
+										</dl>
+									</fieldset>
+								</figcaption>
+							</figure>
+						</li>
+						
+						<li class='photo-grid-item'>
+							<figure>
+								<picture>
+									<source media='(max-width: 3000px)' srcset='assets/img/mais_fotos/patio_piscina_2.jpg, assets/img/mais_fotos/patio_piscina_2.jpg 2x'>
+									<img alt='' src='assets/img/mais_fotos/casal_vista_mar.jpg'>
+								</picture>
+								<figcaption>
+									<fieldset>
+										<input id='patio_piscina_2' type='checkbox' checked="true">
+										<label class='photo-close' for='patio_piscina_2'></label>
+										<dl>
+											Pátio Interno
+										</dl>
+									</fieldset>
+								</figcaption>
+							</figure>
+						</li>
+						
+						<li class='photo-grid-item'>
+							<figure>
+								<picture>
+									<source media='(max-width: 3000px)' srcset='assets/img/mais_fotos/patio_piscina_3.jpg, assets/img/mais_fotos/patio_piscina_3.jpg 2x'>
+									<img alt='' src='assets/img/mais_fotos/casal_vista_mar.jpg'>
+								</picture>
+								<figcaption>
+									<fieldset>
+										<input id='patio_piscina_3' type='checkbox' checked="true">
+										<label class='photo-close' for='patio_piscina_3'></label>
+										<dl>
+											Pátio Interno
+										</dl>
+									</fieldset>
+								</figcaption>
+							</figure>
+						</li>
+					  
+						<li class='photo-grid-item'>
+							<figure>
+								<picture>
+									<source media='(max-width: 3000px)' srcset='assets/img/mais_fotos/sala_estar.jpg, assets/img/mais_fotos/sala_estar.jpg 2x'>
+									<img alt='' src='assets/img/mais_fotos/casal_vista_mar.jpg'>
+								</picture>
+								<figcaption>
+									<fieldset>
+										<input id='sala_estar' type='checkbox' checked="true">
+										<label class='photo-close' for='sala_estar'></label>
+										<dl>
+											Sala de Estar
+										</dl>
+									</fieldset>
+								</figcaption>
+							</figure>
+						</li>
+						
+						<li class='photo-grid-item'>
+							<figure>
+								<picture>
+									<source media='(max-width: 3000px)' srcset='assets/img/mais_fotos/sala_estar_redario.jpg, assets/img/mais_fotos/sala_estar_redario.jpg 2x'>
+									<img alt='' src='assets/img/mais_fotos/casal_vista_mar.jpg'>
+								</picture>
+								<figcaption>
+									<fieldset>
+										<input id='sala_estar_redario' type='checkbox' checked="true">
+										<label class='photo-close' for='sala_estar_redario'></label>
+										<dl>
+											Redário
+										</dl>
+									</fieldset>
+								</figcaption>
+							</figure>
+						</li>
+					  
+					  
+					</ul>
+				</section>
+
+				
+				
+				
 			</div>
-			<div class="carousel-item">
-			  <img class="d-block w-100" src="..." alt="Third slide">
-			</div>
-		  </div>
 		</div>
 	</body>
 </html>
