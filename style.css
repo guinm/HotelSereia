@@ -27,7 +27,7 @@ html body {
 	background: var(--azul-base);
 	-ms-overflow-style: none;  IE and Edge 
 	scrollbar-width: none;
-
+	overflow-x: hidden;
 	background-color: var(--azul-base);
 	color: #111;
 }
