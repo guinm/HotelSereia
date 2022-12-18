@@ -420,7 +420,7 @@ h3 {
   top: 0;
   opacity: 0;
   width: 100%;
-  animation: display 40s infinite;
+  animation: display 44s infinite;
 }
 
 div:has(.carousel_1) {
@@ -453,6 +453,9 @@ img:nth-child(9) {
 }
 img:nth-child(10) {
   animation-delay: 36s;
+}
+img:nth-child(11) {
+  animation-delay: 40s;
 }
 
 .ar169 {
