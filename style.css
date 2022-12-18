@@ -5,7 +5,7 @@
 	--face: #1773ea;
 	
 	--ff-destaque: Fontastique;
-	--ff-text: "Istok Web";
+	--ff-text: "Istok Web", "IstokWeb-Regular.ttf";
 }
 
 *, ::after, ::before {
