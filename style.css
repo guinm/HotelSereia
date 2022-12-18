@@ -1032,6 +1032,7 @@ img.center_bot {
   opacity: 0;
 }
 .photo-grid dl {
+  font-family: var(--ff-text);
   transform: translateY(25%);
   opacity: 0;
   z-index: 0;
