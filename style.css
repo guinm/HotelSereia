@@ -5,13 +5,14 @@
 	--face: #1773ea;
 	
 	--ff-destaque: Fontastique;
-	--ff-text: "Istok Web", "IstokWeb-Regular.ttf";
+	--ff-text: "Istok Web", Istok;
 }
 
 *, ::after, ::before {
 	box-sizing: initial !important;
 }
 
+@font-face { font-family: Istok; src: url("assets/fonts/IstokWeb-Regular.ttf"); }
 @font-face { font-family: Fontastique; src: url('assets/fonts/fontastique.ttf'); }
 
 * {
