@@ -24,6 +24,10 @@ a {
 	text-decoration: none;
 }
 
+html {
+	overflow-x: hidden;
+}
+
 html body {
 	background: var(--azul-base);
 	-ms-overflow-style: none;  IE and Edge 
@@ -312,9 +316,18 @@ h3 {
 	overflow: hidden;
 }
 
-#SideMenu:hover, #SideMenu.open {
-	right: -0.15em;
+@media only screen and (min-width: 680px) {
+	#SideMenu.open {
+		right: -0.15em;
+	}
 }
+
+@media only screen and (max-width: 680px) {
+	#SideMenu:hover {
+		right: -0.15em;
+	}
+}
+
 
 #SideMenu p {
 	position: absolute;
@@ -589,6 +602,7 @@ table + p {
 	line-height: 1.15em;
 	color: white;
 	transition: 0.35s all;
+	-webkit-transition: 0.35s all;
 }
 
 .mais_fotos div:hover h3 {
