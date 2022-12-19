@@ -260,7 +260,7 @@ h3 {
 	flex-direction: row;
 }
 
-.content.split div {
+.content.split:not(.mais_fotos) div {
 	flex-basis: 100%;
 	width: 100%;
 	height: 100%;
@@ -282,7 +282,7 @@ h3 {
 	flex-basis: 60%;
 }
 
-.content.split div + div {
+.content.split:not(.mais_fotos) div + div {
 	margin-left: 3em;
 }
 
@@ -566,6 +566,51 @@ table + p {
 	margin-left: 0;
 }
 
+.flex.mais_fotos {
+	display: flex;
+        flex-wrap: wrap;
+}
+
+.mais_fotos div {
+	margin: 5px;
+	flex: 45%;
+	aspect-ratio: 16/9;
+	background-size: cover !important;
+	position: relative;
+}
+
+.mais_fotos div h3 {
+	opacity: 0;
+	padding: 5px 0px;
+	width: 100%;
+	background-color: #0006;
+	position: absolute;
+	bottom: 5px;
+	line-height: 1.15em;
+	color: white;
+	transition: 0.35s all;
+}
+
+.mais_fotos div:hover h3 {
+	opacity: 1;
+}
+
+#foto_1 {
+	background: url("assets/img/mais_fotos/casal_vista_mar.jpg");
+}
+
+#foto_2 {
+	background: url("assets/img/mais_fotos/casal_vista_mar.jpg");
+}
+
+#foto_3 {
+	background: url("assets/img/mais_fotos/casal_vista_mar.jpg");
+}
+
+#foto_4 {
+	background: url("assets/img/mais_fotos/casal_vista_mar.jpg");
+}
+
 @media only screen and (max-width: 680px) {
 	#menu {
 		height: 5em;
@@ -627,7 +672,7 @@ table + p {
 		top: 9.4vh;
 	}
 	
-	.content.split div + div {
+	.content.split:not(.mais_fotos) div + div {
 		margin: 0;
 	}
 	
