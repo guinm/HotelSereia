@@ -955,6 +955,7 @@ img.center_bot {
 }
 .photo-grid ul {
   display: grid;
+  display: -webkit-grid;
   grid-template-columns: 1fr;
   list-style: none;
 }
