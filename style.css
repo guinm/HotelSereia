@@ -745,6 +745,10 @@ table + p {
 	.photo-grid ul li {
 		flex-basis: 100%;
 	}
+	
+	.mais_fotos div h3 {
+	bottom: 5px;
+}
 }
 
 
