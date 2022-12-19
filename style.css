@@ -585,7 +585,7 @@ table + p {
 }
 
 .mais_fotos div {
-	margin: 5px;
+	margin: 10px 5px 0px 5px;
 	flex: 45%;
 	aspect-ratio: 16/9;
 	background-size: cover !important;
@@ -593,24 +593,19 @@ table + p {
 }
 
 .mais_fotos div h3 {
-	opacity: 0;
 	padding: 5px 0px;
 	width: 100%;
 	background-color: #0006;
 	position: absolute;
-	bottom: 5px;
+	bottom: -100%;
 	line-height: 1.15em;
 	color: white;
-	transition: 0.35s all;
-	-webkit-transition-duration: 0.35s;
-	-webkit-transition-property: opacity;
+	transition: all .35s;
+	overflow: hidden;
 }
 
 .mais_fotos div:hover h3 {
-	opacity: 1;
-	transition: 0.35s all;
-	-webkit-transition-duration: 0.35s;
-	-webkit-transition-property: opacity;
+	bottom: 5px;
 }
 
 #foto_1 {
