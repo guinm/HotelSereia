@@ -613,15 +613,15 @@ table + p {
 }
 
 #foto_2 {
-	background: url("assets/img/mais_fotos/casal_vista_mar.jpg");
+	background: url("assets/img/mais_fotos/casal_vista_mar_ar_tv.jpg");
 }
 
 #foto_3 {
-	background: url("assets/img/mais_fotos/casal_vista_mar.jpg");
+	background: url("assets/img/mais_fotos/casal_vista_mar_vista.jpg");
 }
 
 #foto_4 {
-	background: url("assets/img/mais_fotos/casal_vista_mar.jpg");
+	background: url("assets/img/mais_fotos/conjugado_vista_mar.jpg");
 }
 
 @media only screen and (max-width: 680px) {
