@@ -666,6 +666,14 @@ table + p {
 		flex-direction: column;
 	}
 	
+	.content.split.mais_fotos {
+		flex-direction: row;
+	}
+	
+	.content.split.mais_fotos div {
+		flex: 100%;
+	}
+	
 	#SideMenu {
 		backface-visibility: hidden;
 		z-index: 101;
