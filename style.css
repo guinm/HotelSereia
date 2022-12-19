@@ -590,6 +590,7 @@ table + p {
 	aspect-ratio: 16/9;
 	background-size: cover !important;
 	position: relative;
+	overflow: hidden;
 }
 
 .mais_fotos div h3 {
@@ -601,7 +602,7 @@ table + p {
 	line-height: 1.15em;
 	color: white;
 	transition: all .35s;
-	overflow: hidden;
+	
 }
 
 .mais_fotos div:hover h3 {
