@@ -603,10 +603,12 @@ table + p {
 	color: white;
 	transition: 0.35s all;
 	-webkit-transition: 0.35s all;
+	visibility:visible;
 }
 
 .mais_fotos div:hover h3 {
 	opacity: 1;
+	visibility:visible;
 }
 
 #foto_1 {
