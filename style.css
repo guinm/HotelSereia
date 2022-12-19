@@ -674,6 +674,10 @@ table + p {
 		padding: 0;
 		width: 100%;
 	}
+	
+	.photo-grid ul li {
+		flex-basis: 100%;
+	}
 }
 
 
@@ -950,25 +954,24 @@ img.center_bot {
 
 
 .photo-grid {
-  position: relative;
-  font-style: italic;
+	position: relative;
+	font-style: italic;
 }
 .photo-grid ul {
-  display: grid;
-  display: -webkit-grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
 }
 .photo-grid ul li {
-  width: 100%;
-  overflow: hidden;
+	flex-basis: 50%;
+	overflow: hidden;
 }
 .photo-grid figure, .photo-grid picture, .photo-grid img {
-  display: block;
-  max-width: 100%;
-  height: 100%;
-  aspect-ratio: 16/9;
-  object-fit: cover;
+	display: block;
+	max-width: 100%;
+	height: 100%;
+	aspect-ratio: 16/9;
+	object-fit: cover;
 }
 .photo-grid figure {
   position: relative;
