@@ -598,7 +598,7 @@ table + p {
 	width: 100%;
 	background-color: #0006;
 	position: absolute;
-	bottom: -100%;
+	bottom: 5px;
 	line-height: 1.15em;
 	color: white;
 	transition: all .35s;
@@ -661,6 +661,7 @@ table + p {
 		width: 100vw;
 		margin-top: 5vh;
 		font-size: 0.8em;
+		overflow: hidden;
 	}
 	
 	#main .content {
@@ -747,8 +748,8 @@ table + p {
 	}
 	
 	.mais_fotos div h3 {
-	bottom: 5px;
-}
+		bottom: 5px !important;
+	}
 }
 
 
