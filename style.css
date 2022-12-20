@@ -602,7 +602,8 @@ table + p {
 	line-height: 1.15em;
 	color: white;
 	transition: all .35s;
-	
+	font-family: var(--ff-text);
+	font-weight: 400;
 }
 
 .mais_fotos div:hover h3 {
@@ -623,6 +624,56 @@ table + p {
 
 #foto_4 {
 	background: url("assets/img/mais_fotos/conjugado_vista_mar.jpg");
+}
+
+#foto_5 {
+	background: url("assets/img/mais_fotos/conjugado_vista_mar_2.jpg");
+	background-position: center !important;
+}
+
+#foto_6 {
+	background: url("assets/img/mais_fotos/conjugado_vista_mar_terreo.jpg");
+}
+
+#foto_7 {
+	background: url("assets/img/mais_fotos/conjugado_vista_mar_terreo_2.jpg");
+}
+
+#foto_8 {
+	background: url("assets/img/mais_fotos/conjugado_vista_mar_terreo_vista.jpg");
+}
+
+#foto_9 {
+	background: url("assets/img/mais_fotos/conjugado_vista_mar_tv_cozinha.jpg");
+}
+
+#foto_10 {
+	background: url("assets/img/mais_fotos/conjugado_vista_mar_vista.jpg");
+}
+
+#foto_11 {
+	background: url("assets/img/mais_fotos/patio_piscina.jpg");
+	background-position: center !important;
+}
+
+#foto_12 {
+	background: url("assets/img/mais_fotos/patio_piscina_2.jpg");
+}
+
+#foto_13 {
+	background: url("assets/img/mais_fotos/patio_piscina_3.jpg");
+}
+
+#foto_14 {
+	background: url("assets/img/mais_fotos/sala_estar.jpg");
+}
+
+#foto_15 {
+	height: 50% !important;
+	height: 100%;
+	aspect-ratio: 3.5;
+	background-position: center !important;
+	background: url("assets/img/mais_fotos/sala_estar_redario.jpg");
 }
 
 @media only screen and (max-width: 680px) {
