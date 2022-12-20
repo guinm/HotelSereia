@@ -35,6 +35,7 @@ html body {
 	overflow-x: hidden;
 	background-color: var(--azul-base);
 	color: #111;
+	position:relative;
 }
 
 #menu ul, #SideMenu p {
